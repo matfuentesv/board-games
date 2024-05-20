@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Juegos Cooperativos - Paraíso de Juegos de Mesa</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/cooperative.css">
+    <script defer src="../js/cooperative.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="container header-container">
+            <div class="header-left">
+                <div class="logo">
+                    <img src="../img/logo2.jfif" alt="Paraíso de Juegos de Mesa">
+                </div>
+                <p>¡Tu tienda única para todo tipo de juegos de mesa!</p>
+            </div>
+            <div class="header-right">
+                <a href="../mi-cuenta.html" class="account-link">Mi cuenta</a>
+                <a href="../carrito.html" class="cart-link">Mi carrito</a>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="strategy.html">Estrategia</a></li>
+                <li><a href="family.html">Familia</a></li>
+                <li><a href="cooperative.html">Cooperativos</a></li>
+                <li><a href="kids.html">Infantiles</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="content">
+        <div class="container">
+            <h2 class="title">Juegos Cooperativos</h2>
+            <div class="game-list">
+                <div class="game-item">
+                    <div class="image-container">
+                        <img src="../img/adventures-games-monocromo-sa.jpg" alt="Adventures Games Monocromo">
+                    </div>
+                    <h3>Adventures Games Monocromo</h3>
+                    <p>Un juego de exploración para toda la familia, donde los jugadores descubren nuevas tierras y buscan tesoros escondidos.</p>
+                    <p class="price">Precio: $32.990</p>
+                    <p class="discount">Descuento: 10%</p>
+                    <button class="preview-btn" onclick="openModal('adventures-games-monocromo')">Vista Previa</button>
+                </div>
+                <div class="game-item" >
+                    <div class="image-container">
+                        <img src="../img/exit.jpg" alt="Exit">
+                    </div>
+                    <h3>Exit</h3>
+                    <p>Resuelve puzzles y escapa de las habitaciones en este emocionante juego de aventuras.</p>
+                    <p class="price">Precio: $25.000</p>
+                    <p class="discount">Descuento: 15%</p>
+                    <button class="preview-btn"onclick="openModal('exit')">Vista Previa</button>
+                </div>
+                <div class="game-item" >
+                    <div class="image-container">
+                        <img src="../img/night-of-the-living-dead-espanol.jpg" alt="Night of the Living Dead">
+                    </div>
+                    <h3>Night of the Living Dead</h3>
+                    <p>Sobrelleva la invasión zombie cooperando con otros jugadores en este juego lleno de terror y estrategia.</p>
+                    <p class="price">Precio: $30.000</p>
+                    <p class="discount">Descuento: 20%</p>
+                    <button class="preview-btn"onclick="openModal('night-of-the-living-dead')">Vista Previa</button>
+                </div>
+                <div class="game-item" >
+                    <div class="image-container">
+                        <img src="../img/rescate.jpg" alt="Rescate">
+                    </div>
+                    <h3>Rescate</h3>
+                    <p>Trabaja en equipo para salvar vidas en situaciones de emergencia.</p>
+                    <p class="price">Precio: $30.000</p>
+                    <p class="discount">Descuento: 20%</p>
+                    <button class="preview-btn" onclick="openModal('rescate')">Vista Previa</button>
+                </div>
+                <div class="game-item" >
+                    <div class="image-container">
+                        <img src="../img/la-tripulacion.jpg" alt="La Tripulación">
+                    </div>
+                    <h3>La Tripulación</h3>
+                    <p>Embárcate en una misión espacial con tu equipo en este juego de cartas cooperativo.</p>
+                    <p class="price">Precio: $30.000</p>
+                    <p class="discount">Descuento: 20%</p>
+                    <button class="preview-btn" onclick="openModal('la-tripulacion')">Vista Previa</button>
+                </div>
+                <div class="game-item" >
+                    <div class="image-container">
+                        <img src="../img/undo-4-fiebre-del-tesoro.jpg" alt="Undo">
+                    </div>
+                    <h3>Undo</h3>
+                    <p>Viaja en el tiempo y cambia la historia en este juego de misterio y cooperación.</p>
+                    <p class="price">Precio: $30.000</p>
+                    <p class="discount">Descuento: 20%</p>
+                    <button class="preview-btn" onclick="openModal('undo')">Vista Previa</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Paraíso de Juegos de Mesa. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</div>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <div id="modal-body"></div>
+    </div>
+</div>
+
+<script src="../js/scripts.js"></script>
+</body>
+</html>

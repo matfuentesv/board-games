@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Juegos Infantiles - Paraíso de Juegos de Mesa</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/kid.css">
+    <script defer src="../js/kid.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="container header-container">
+            <div class="header-left">
+                <div class="logo">
+                    <img src="../img/logo2.jfif" alt="Paraíso de Juegos de Mesa">
+                </div>
+                <p>¡Tu tienda única para todo tipo de juegos de mesa!</p>
+            </div>
+            <div class="header-right">
+                <a href="../mi-cuenta.html" class="account-link">Mi cuenta</a>
+                <a href="../carrito.html" class="cart-link">Mi carrito</a>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="strategy.html">Estrategia</a></li>
+                <li><a href="family.html">Familia</a></li>
+                <li><a href="cooperative.html">Cooperativos</a></li>
+                <li><a href="kids.html">Infantiles</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="content">
+        <div class="container">
+            <h2 class="title">Juegos Infantiles</h2>
+            <div class="game-list">
+                <div class="game-item" >
+                    <div class="image-container">
+                        <img src="../img/catan-junior.jpg" alt="Catan Junior" loading="lazy">
+                    </div>
+                    <h3>Catan Junior</h3>
+                    <p>Un juego para los más pequeños donde exploran islas y buscan tesoros escondidos.</p>
+                    <p class="price">Precio: $32.990</p>
+                    <p class="discount">Descuento: 10%</p>
+                    <button class="preview-btn" onclick="openModal('catan-junior')">Vista Previa</button>
+                </div>
+                <div class="game-item" >
+                    <div class="image-container">
+                        <img src="../img/leo-va-al-barbero.jpg" alt="Leo" loading="lazy">
+                    </div>
+                    <h3>Leo</h3>
+                    <p>Ayuda a Leo el león a llegar a tiempo a su cita con el barbero en este divertido juego para niños.</p>
+                    <p class="price">Precio: $25.000</p>
+                    <p class="discount">Descuento: 15%</p>
+                    <button class="preview-btn" onclick="openModal('leo-va-al-barbero')">Vista Previa</button>
+                </div>
+                <div class="game-item" onclick="openModal('concept-kids-animales')">
+                    <div class="image-container">
+                        <img src="../img/concept-kids-animales.jpg" alt="Concept Kids Animales" loading="lazy">
+                    </div>
+                    <h3>Concept Kids Animales</h3>
+                    <p>Un juego cooperativo donde los niños describen y adivinan animales usando iconos y pistas.</p>
+                    <p class="price">Precio: $30.000</p>
+                    <p class="discount">Descuento: 20%</p>
+                    <button class="preview-btn">Vista Previa</button>
+                </div>
+                <div class="game-item" >
+                    <div class="image-container">
+                        <img src="../img/fabulantica.jpg" alt="Fabulantica" loading="lazy">
+                    </div>
+                    <h3>Fabulantica</h3>
+                    <p>Explora el mágico mundo de Fabulantica y ayuda a los personajes a encontrar sus amigos desaparecidos.</p>
+                    <p class="price">Precio: $30.000</p>
+                    <p class="discount">Descuento: 20%</p>
+                    <button class="preview-btn" onclick="openModal('fabulantica')">Vista Previa</button>
+                </div>
+                <div class="game-item" >
+                    <div class="image-container">
+                        <img src="../img/fantasma-blitz-dados.jpg" alt="Fantasma Blitz" loading="lazy">
+                    </div>
+                    <h3>Fantasma Blitz</h3>
+                    <p>Un juego de reacción rápida donde los jugadores atrapan objetos antes que sus oponentes.</p>
+                    <p class="price">Precio: $30.000</p>
+                    <p class="discount">Descuento: 20%</p>
+                    <button class="preview-btn" onclick="openModal('fantasma-blitz')">Vista Previa</button>
+                </div>
+                <div class="game-item" >
+                    <div class="image-container">
+                        <img src="../img/ghost-adventure.jpg" alt="Ghost Adventure" loading="lazy">
+                    </div>
+                    <h3>Ghost Adventure</h3>
+                    <p>Un emocionante juego de aventuras donde los jugadores guían a un pequeño fantasma a través de misiones.</p>
+                    <p class="price">Precio: $30.000</p>
+                    <p class="discount">Descuento: 20%</p>
+                    <button class="preview-btn" onclick="openModal('ghost-adventure')">Vista Previa</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Paraíso de Juegos de Mesa. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</div>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <div id="modal-body"></div>
+    </div>
+</div>
+
+<script src="../js/scripts.js"></script>
+<script src="../js/kids.js"></script>
+</body>
+</html>
