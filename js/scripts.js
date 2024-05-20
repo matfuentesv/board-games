@@ -87,7 +87,10 @@ function openModal(gameId) {
             <p class="modal-price">${game.price}</p>
             <p class="modal-discount">Descuento: ${game.discount}</p>
             <p>${game.description}</p>
-            <button class="add-to-cart-btn">Añadir al Carrito</button>
+            <div class="add-to-cart-container">
+                <input type="number" class="quantity-input" min="1" value="1">
+                <button class="add-to-cart-btn">Añadir al Carrito</button>
+            </div>
         </div>
     `;
 
