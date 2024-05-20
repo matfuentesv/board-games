@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Juegos en Familia - Paraíso de Juegos de Mesa</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/family.css">
+    <script defer src="../js/family.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="container header-container">
+            <div class="header-left">
+                <div class="logo">
+                    <img src="../img/logo2.jfif" alt="Paraíso de Juegos de Mesa">
+                </div>
+                <p>¡Tu tienda única para todo tipo de juegos de mesa!</p>
+            </div>
+            <div class="header-right">
+                <a href="../mi-cuenta.html" class="account-link">Mi cuenta</a>
+                <a href="../carrito.html" class="cart-link">Mi carrito</a>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="strategy.html">Estrategia</a></li>
+                <li><a href="family.html">Familia</a></li>
+                <li><a href="cooperative.html">Cooperativos</a></li>
+                <li><a href="kids.html">Infantiles</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="content">
+        <div class="container">
+            <h2 class="title">Juegos en Familia</h2>
+            <div class="game-list">
+                <div class="game-item" >
+                    <div class="image-container">
+                        <img src="../img/exploradores.jpg" alt="Exploradores">
+                    </div>
+                    <h3>Exploradores</h3>
+                    <p>Un juego de exploración para toda la familia, donde los jugadores descubren nuevas tierras y buscan tesoros escondidos.</p>
+                    <p class="price">Precio: $32.990</p>
+                    <p class="discount">Descuento: 10%</p>
+                    <button class="preview-btn" onclick="openModal('exploradores')">Vista Previa</button>
+                </div>
+                <div class="game-item">
+                    <div class="image-container">
+                        <img src="../img/dias-de-radio.jpg" alt="Dias de Radio">
+                    </div>
+                    <h3>Días de Radio</h3>
+                    <p>Revive los días de la radio con este juego nostálgico que mezcla trivia y música clásica.</p>
+                    <p class="price">Precio: $25.000</p>
+                    <p class="discount">Descuento: 15%</p>
+                    <button class="preview-btn" onclick="openModal('dias-de-radio')">Vista Previa</button>
+                </div>
+                <div class="game-item">
+                    <div class="image-container">
+                        <img src="../img/formula-d.jpg" alt="Formula D">
+                    </div>
+                    <h3>Formula D</h3>
+                    <p>Compite en carreras de alta velocidad con este emocionante juego de mesa que simula las carreras de Fórmula 1.</p>
+                    <p class="price">Precio: $30.000</p>
+                    <p class="discount">Descuento: 20%</p>
+                    <button class="preview-btn" onclick="openModal('formula-d')">Vista Previa</button>
+                </div>
+                <div class="game-item" >
+                    <div class="image-container">
+                        <img src="../img/sumatra.jpg" alt="Sumatra">
+                    </div>
+                    <h3>Sumatra</h3>
+                    <p>Embárcate en una aventura a través de la isla de Sumatra, descubriendo su rica flora y fauna.</p>
+                    <p class="price">Precio: $30.000</p>
+                    <p class="discount">Descuento: 20%</p>
+                    <button class="preview-btn" onclick="openModal('sumatra')">Vista Previa</button>
+                </div>
+                <div class="game-item">
+                    <div class="image-container">
+                        <img src="../img/viceroy.jpg" alt="Viceroy">
+                    </div>
+                    <h3>Viceroy</h3>
+                    <p>Construye tu propio imperio en este juego estratégico de construcción de mazos y colocación de losetas.</p>
+                    <p class="price">Precio: $30.000</p>
+                    <p class="discount">Descuento: 20%</p>
+                    <button class="preview-btn" onclick="openModal('viceroy')">Vista Previa</button>
+                </div>
+                <div class="game-item">
+                    <div class="image-container">
+                        <img src="../img/century.jpg" alt="Century">
+                    </div>
+                    <h3>Century</h3>
+                    <p>Viaja a través de los siglos y comercia con especias exóticas en este juego de estrategia para toda la familia.</p>
+                    <p class="price">Precio: $30.000</p>
+                    <p class="discount">Descuento: 20%</p>
+                    <button class="preview-btn" onclick="openModal('century')">Vista Previa</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Paraíso de Juegos de Mesa. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</div>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <div id="modal-body" class="modal-body"></div>
+    </div>
+</div>
+
+<script src="../js/scripts.js"></script>
+</body>
+</html>
