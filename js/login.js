@@ -1,4 +1,3 @@
-// login.js
 
 document.querySelector('.show-password-btn').addEventListener('click', function() {
     const passwordInput = document.getElementById('password');
