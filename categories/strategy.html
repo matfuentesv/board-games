@@ -1,113 +1,187 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <title>Elite games</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Games</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="../css/styles.css">
-    <script defer src="../js/scripts.js"></script>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="../js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-<div class="wrapper">
-    <header class="header">
-        <div class="container header-container">
-            <div class="header-left">
-                <div class="logo">
-                    <img src="../img/logo2.jfif">
-                    <span class="site-name">Elite Games</span>
-                </div>
-            </div>
-            <div class="header-right">
-                <a href="../account/mi-cuenta.html" class="account-link">Mi cuenta</a>
-                <a href="../carrito.html" class="cart-link">Mi carrito</a>
-            </div>
-        </div>
-    </header>
-    <nav class="navbar">
-        <div class="container">
-            <ul class="nav-list">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="strategy.html">Estrategia</a></li>
-                <li><a href="family.html">Familia</a></li>
-                <li><a href="cooperative.html">Cooperativos</a></li>
-                <li><a href="kids.html">Infantiles</a></li>
-            </ul>
-        </div>
-    </nav>
-    <main class="content">
-        <div class="container">
-            <h2 class="title">Juegos Estrategia</h2>
-            <div class="game-list">
-                <div class="game-item">
-                    <div class="image-container">
-                        <img src="../img/azul.jpg" alt="Azul">
-                    </div>
-                    <h3>Azul</h3>
-                    <p class="price">Precio: $32.990</p>
-                    <p class="discount">Descuento: 10%</p>
-                    <button class="preview-btn" onclick="openModal('azul')">Vista Previa</button>
-                </div>
-                <div class="game-item">
-                    <div class="image-container">
-                        <img src="../img/catan.jpg" alt="Catan">
-                    </div>
-                    <h3>Catan</h3>
-                    <p class="price">Precio: $25.000</p>
-                    <p class="discount">Descuento: 15%</p>
-                    <button class="preview-btn" onclick="openModal('catan')">Vista Previa</button>
-                </div>
-                <div class="game-item">
-                    <div class="image-container">
-                        <img src="../img/wonders.jpg" alt="7 Wonders">
-                    </div>
-                    <h3>7 Wonders</h3>
-                    <p class="price">Precio: $30.000</p>
-                    <p class="discount">Descuento: 20%</p>
-                    <button class="preview-btn" onclick="openModal('wonders')">Vista Previa</button>
-                </div>
-                <div class="game-item">
-                    <div class="image-container">
-                        <img src="../img/stone.jpg" alt="Stone Age">
-                    </div>
-                    <h3>Stone Age</h3>
-                    <p class="price">Precio: $30.000</p>
-                    <p class="discount">Descuento: 20%</p>
-                    <button class="preview-btn" onclick="openModal('stone')">Vista Previa</button>
-                </div>
-                <div class="game-item">
-                    <div class="image-container">
-                        <img src="../img/carcasonne.jpg" alt="Carcassonne">
-                    </div>
-                    <h3>Carcassonne</h3>
-                    <p class="price">Precio: $30.000</p>
-                    <p class="discount">Descuento: 20%</p>
-                    <button class="preview-btn" onclick="openModal('carcassonne')">Vista Previa</button>
-                </div>
-                <div class="game-item">
-                    <div class="image-container">
-                        <img src="../img/pandemic.jpg" alt="Pandemic">
-                    </div>
-                    <h3>Pandemic</h3>
-                    <p class="price">Precio: $30.000</p>
-                    <p class="discount">Descuento: 20%</p>
-                    <button class="preview-btn" onclick="openModal('pandemic')">Vista Previa</button>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Elite Games. Todos los derechos reservados.</p>
-        </div>
-    </footer>
-</div>
 
-<!-- Modal -->
+<nav class="navbar navbar-expand-lg navbar-custom">
+    <a class="navbar-brand" href="#">
+        <img src="../img/logo2.jfif" width="40" height="40" alt="Elite Games"> Elite Games
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./strategy.html">Estrategia</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./family.html">Familia</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./cooperative.html">Cooperativos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./kids.html">Infantiles</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="../account/mi-cuenta.html"><i class="fas fa-user"></i> Mi cuenta</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> Mi carrito</a>
+            </li>
+        </ul>
+        <form class="form-inline ml-auto">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+        </form>
+    </div>
+</nav>
+<main class="content">
+    <div class="container">
+        <h2 class="title">Juegos de Estrategia</h2>
+        <div class="game-list">
+            <div class="game-item">
+                <div class="image-container">
+                    <img src="../img/azul.jpg" alt="Azul">
+                </div>
+                <h3>Azul</h3>
+                <p class="price">Precio: $32.990</p>
+                <p class="discount">Descuento: 10%</p>
+                <button class="preview-btn" onclick="openModal('azul')">Vista Previa</button>
+            </div>
+            <div class="game-item">
+                <div class="image-container">
+                    <img src="../img/catan.jpg" alt="Catan">
+                </div>
+                <h3>Catan</h3>
+                <p class="price">Precio: $25.000</p>
+                <p class="discount">Descuento: 15%</p>
+                <button class="preview-btn" onclick="openModal('catan')">Vista Previa</button>
+            </div>
+            <div class="game-item">
+                <div class="image-container">
+                    <img src="../img/wonders.jpg" alt="7 Wonders">
+                </div>
+                <h3>7 Wonders</h3>
+                <p class="price">Precio: $30.000</p>
+                <p class="discount">Descuento: 20%</p>
+                <button class="preview-btn" onclick="openModal('wonders')">Vista Previa</button>
+            </div>
+            <div class="game-item">
+                <div class="image-container">
+                    <img src="../img/stone.jpg" alt="Stone Age">
+                </div>
+                <h3>Stone Age</h3>
+                <p class="price">Precio: $30.000</p>
+                <p class="discount">Descuento: 20%</p>
+                <button class="preview-btn" onclick="openModal('stone')">Vista Previa</button>
+            </div>
+            <div class="game-item">
+                <div class="image-container">
+                    <img src="../img/carcasonne.jpg" alt="Carcassonne">
+                </div>
+                <h3>Carcassonne</h3>
+                <p class="price">Precio: $30.000</p>
+                <p class="discount">Descuento: 20%</p>
+                <button class="preview-btn" onclick="openModal('carcassonne')">Vista Previa</button>
+            </div>
+            <div class="game-item">
+                <div class="image-container">
+                    <img src="../img/pandemic.jpg" alt="Pandemic">
+                </div>
+                <h3>Pandemic</h3>
+                <p class="price">Precio: $30.000</p>
+                <p class="discount">Descuento: 20%</p>
+                <button class="preview-btn" onclick="openModal('pandemic')">Vista Previa</button>
+            </div>
+        </div>
+    </div>
+</main>
+<section class="testimonials">
+    <div class="container">
+        <h2>Lo que nuestros clientes dicen</h2>
+        <div class="row">
+            <div class="col-md-4 testimonial-item">
+                <blockquote>
+                    <p>"Elite Games tiene una excelente selección de juegos de mesa. ¡Me encanta comprar aquí!"</p>
+                    <footer>- Juan Pérez</footer>
+                </blockquote>
+            </div>
+            <div class="col-md-4 testimonial-item">
+                <blockquote>
+                    <p>"El servicio al cliente es excepcional y siempre encuentro lo que busco."</p>
+                    <footer>- Ana Gómez</footer>
+                </blockquote>
+            </div>
+            <div class="col-md-4 testimonial-item">
+                <blockquote>
+                    <p>"Los mejores precios y una entrega rápida. ¡Muy recomendable!"</p>
+                    <footer>- Carlos López</footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer-custom">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Enlaces útiles</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Síguenos</h5>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h5>Suscríbete</h5>
+                <p>Recibe nuestras últimas noticias y ofertas.</p>
+                <form>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Correo electrónico">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="submit">Suscribirse</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <p class="mt-4">&copy; 2024 Elite Games. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
 <div id="modal" class="modal">
     <div class="modal-content">
         <span class="close-btn" onclick="closeModal()">&times;</span>
-        <div id="modal-body" class="modal-body">
-        </div>
+        <div id="modal-body"></div>
     </div>
 </div>
 </body>
